@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">Library</div>
+        <button class="add-btn">Add a book</button>
+        <div class="library-container"></div>
+    </div>
+    <div class="new-book-form hidden">
+        <form action="#" method="get" class="form">
+            <div class="new-book__author">
+                <label for="author">Author:</label>
+                <input name="author" type="text" id="author" required>
+                <p class="show-error">Please, fill this field.</p>
+            </div>
+            <div class="new-book__title">
+                <label for="title">Title:</label>
+                <input name="title" type="text" id="title" required>
+                <p class="show-error">Please, fill this field.</p>
+            </div>
+            <div class="new-book__year">
+                <label for="year">Published:</label>
+                <input name="year" type="text" id="year" required>
+                <p class="show-error">Please, fill this field.</p>
+            </div>
+            <div class="new-book__pages">
+                <label for="pages">Number of pages:</label>
+                <input name="pages" type="text" id="pages" required>
+                <p class="show-error">Please, fill this field.</p>
+            </div>
+            <div class="new-book__read">
+                <label for="read">Read:</label>
+                <input name="read" type="text" id="read" required>
+                <p class="show-error">Please, fill this field.</p>
+            </div>
+            <button type="submit" class="add-a-book">Add a book</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
