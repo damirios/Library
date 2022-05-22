@@ -9,39 +9,51 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="title">Library</div>
-        <button class="add-btn">Add a book</button>
-        <div class="library-container"></div>
-    </div>
-    <div class="new-book-form hidden">
-        <form action="#" method="get" class="form">
-            <div class="new-book__author">
-                <label for="author">Author:</label>
-                <input name="author" type="text" id="author" required>
-                <p class="show-error">Please, fill this field.</p>
+        <header class="header">
+        </header>
+        <main class="main">
+            <div class="add-book">
+                <button type="button">Add a book</button>
             </div>
-            <div class="new-book__title">
-                <label for="title">Title:</label>
-                <input name="title" type="text" id="title" required>
-                <p class="show-error">Please, fill this field.</p>
+            <div class="library-container"></div>
+        </main>
+        <div class="new-book-form hidden">
+            <form action="#" method="get" class="form">
+                <div class="title">
+                    <label for="title">Title:</label>
+                    <input id="title" name="title" type="text" required>
+                </div>
+                <div class="author">
+                    <label for="author">Author:</label>
+                    <input id="author" name="author" type="text" required>
+                </div>
+                <div class="pages">
+                    <label for="pages">Pages:</label>
+                    <input id="pages" name="pages" type="text" required>
+                </div>
+                <div class="year">
+                    <label for="year">Published in:</label>
+                    <input id="year" name="year" type="text" required>
+                </div>
+                <div class="read">
+                    <label for="read">Read:</label>
+                    <input id="read" name="read" type="text" required>
+                </div>
+                <div class="submit-adding">
+                    <button type="submit">Submit</button>
+                </div>
+                <!-- <div class="buttons">
+                    <button type="submit" class="change-read">Change 'Read' status</button>
+                    <button type="submit" class="remove-book" >Remove the book</button>
+                </div> -->
+            </form>
+        </div>
+        <div class="blind"></div>
+        <footer class="footer">
+            <div class="copyright">
+                Copyright © damirios, 2022. <a href="https://github.com/damirios">My github page is here</a>
             </div>
-            <div class="new-book__year">
-                <label for="year">Published:</label>
-                <input name="year" type="text" id="year" required>
-                <p class="show-error">Please, fill this field.</p>
-            </div>
-            <div class="new-book__pages">
-                <label for="pages">Number of pages:</label>
-                <input name="pages" type="text" id="pages" required>
-                <p class="show-error">Please, fill this field.</p>
-            </div>
-            <div class="new-book__read">
-                <label for="read">Read:</label>
-                <input name="read" type="text" id="read" required>
-                <p class="show-error">Please, fill this field.</p>
-            </div>
-            <button type="submit" class="add-a-book">Add a book</button>
-        </form>
+        </footer>
     </div>
     <script src="script.js"></script>
 </body>
